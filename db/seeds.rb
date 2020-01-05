@@ -1,3 +1,11 @@
+3.times do |topic|
+	Topic.create!(
+		title: "Topic #{topic}"
+		)
+end
+
+puts "3 topics has been created"
+
 10.times do |blog| 
 	Blog.create!( title:"My Blog Post #{blog}",
 	body:"Hard-working Indian, who has not got the opportunity to showcase its
@@ -12,8 +20,8 @@
 
 	In the financial services sector, the capital market is one industry. Yes,
 	the stock market is also called the capital market. As, through the stock
-	market, companies raise capital to finance their business."
-
+	market, companies raise capital to finance their business.",
+	topic_id: Topic.last.id
 )
 end
 
@@ -28,10 +36,24 @@ end
 
 puts "5 skills has been created"
 
-9.times do |portfolio_item|
+8.times do |portfolio_item|
 	 Portfolio.create!( 
 	 	title: "Portfolio title : #{portfolio_item}",
-		subtitle: "Quora content",
+		subtitle: "Ruby on Rails",
+		body: "In the capital market/stock market, there are a lot of challenges.
+		Stockbrokers who are the backbone of this sector have always faced issues
+		with client acquisition costs and client engagement costs. And to meet this
+		challenged, few of them have done malpractices, and retail investors have
+		suffered losses.",
+		main_image: "https://placehold.it/600x400",
+		thumb_image: "https://placehold.it/350x200"
+ )
+end
+
+1.times do |portfolio_item|
+	 Portfolio.create!( 
+	 	title: "Portfolio title : #{portfolio_item}",
+		subtitle: "Angular",
 		body: "In the capital market/stock market, there are a lot of challenges.
 		Stockbrokers who are the backbone of this sector have always faced issues
 		with client acquisition costs and client engagement costs. And to meet this
@@ -43,3 +65,11 @@ puts "5 skills has been created"
 end
 
 puts "9 portfolio item has been created"
+
+3.times do |technology|
+	Portfolio.last.technologies.create!(
+		name: "Technology #{technology}"
+		)
+end
+
+puts "3 technologies has been created"
