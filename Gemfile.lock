@@ -84,6 +84,7 @@ GEM
       autoprefixer-rails (>= 9.1.0)
       popper_js (>= 1.14.3, < 2)
       sassc-rails (>= 2.0.0)
+    bootstrap_flash_messages (1.0.2)
     builder (3.2.4)
     byebug (11.0.1)
     carrierwave (2.1.0)
@@ -118,6 +119,7 @@ GEM
       activerecord (>= 4.0.0)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+    gritter (1.2.0)
     i18n (1.7.0)
       concurrent-ruby (~> 1.0)
     image_processing (1.10.3)
@@ -262,6 +264,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.4.2)
   bootstrap (~> 4.4.1)
+  bootstrap_flash_messages (~> 1.0.1)
   byebug
   carrierwave (~> 2.1)
   carrierwave-aws (~> 1.5)
@@ -270,6 +273,7 @@ DEPENDENCIES
   dotenv-rails (~> 2.7, >= 2.7.5)
   font-awesome-rails (~> 4.7, >= 4.7.0.5)
   friendly_id (~> 5.2.4)
+  gritter (~> 1.2)
   jbuilder (~> 2.7)
   jquery-ui-rails (~> 6.0, >= 6.0.1)
   kaminari (~> 1.2)

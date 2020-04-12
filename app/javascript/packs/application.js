@@ -13,8 +13,6 @@ require("jquery-ui")
 require("custom/html.sortable")
 require("packs/portfolios")
 
-
-
 // $(function(){
 //   $('.sortable').sortable();
 // });
@@ -30,3 +28,5 @@ require("packs/portfolios")
 //= require jquery3
 //= require popper
 //= require bootstrap-sprockets
+
+
